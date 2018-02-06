@@ -80,7 +80,7 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
       return;
     }
 
-    final FormattingTuple ft = MessageFormatter.format(format, arguments);
+    final FormattingTuple ft = MessageFormatter.arrayFormat(format, arguments);
     log(SELF, Level.TRACE, ft.getMessage(), ft.getThrowable());
   }
 
@@ -134,7 +134,7 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
       return;
     }
 
-    final FormattingTuple ft = MessageFormatter.format(format, arguments);
+    final FormattingTuple ft = MessageFormatter.arrayFormat(format, arguments);
     log(SELF, Level.DEBUG, ft.getMessage(), ft.getThrowable());
   }
 
@@ -188,7 +188,7 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
       return;
     }
 
-    final FormattingTuple ft = MessageFormatter.format(format, arguments);
+    final FormattingTuple ft = MessageFormatter.arrayFormat(format, arguments);
     log(SELF, Level.INFO, ft.getMessage(), ft.getThrowable());
   }
 
@@ -204,7 +204,7 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
 
   @Override
   public boolean isWarnEnabled() {
-    return isDebugEnabled()
+    return isInfoEnabled()
         || Level.WARN == de.willuhn.logging.Logger.getLevel();
   }
 
@@ -233,7 +233,7 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
       return;
     }
 
-    final FormattingTuple ft = MessageFormatter.format(format, arguments);
+    final FormattingTuple ft = MessageFormatter.arrayFormat(format, arguments);
     log(SELF, Level.WARN, ft.getMessage(), ft.getThrowable());
   }
 
@@ -269,7 +269,7 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
       return;
     }
 
-    log(SELF, Level.WARN, msg, null);
+    log(SELF, Level.ERROR, msg, null);
   }
 
   @Override
@@ -279,7 +279,7 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
     }
 
     final FormattingTuple ft = MessageFormatter.format(format, arg);
-    log(SELF, Level.WARN, ft.getMessage(), ft.getThrowable());
+    log(SELF, Level.ERROR, ft.getMessage(), ft.getThrowable());
   }
 
   @Override
@@ -289,7 +289,7 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
     }
 
     final FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
-    log(SELF, Level.WARN, ft.getMessage(), ft.getThrowable());
+    log(SELF, Level.ERROR, ft.getMessage(), ft.getThrowable());
   }
 
   @Override
@@ -298,8 +298,8 @@ public class JameicaSlf4jLoggerAdapter extends MarkerIgnoringBase implements Log
       return;
     }
 
-    final FormattingTuple ft = MessageFormatter.format(format, arguments);
-    log(SELF, Level.WARN, ft.getMessage(), ft.getThrowable());
+    final FormattingTuple ft = MessageFormatter.arrayFormat(format, arguments);
+    log(SELF, Level.ERROR, ft.getMessage(), ft.getThrowable());
   }
 
   @Override
