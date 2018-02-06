@@ -32,7 +32,7 @@ install_jameica() {
     cd "${TARGETDIR}/jameica-meta"
 
     echo "mvn install -B"
-    mvn install -B -Dmaven.javadoc.skip=true
+    mvn install -B -Pdoclint-java8-disable
 
     cd ..
 
