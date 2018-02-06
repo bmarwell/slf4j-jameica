@@ -26,12 +26,17 @@ check_target_dir() {
 install_jameica() {
     # Gibt leider kein Buildscript :-(
     # git clone "https://github.com/willuhn/jameica.git" "${JAMEICADIR}"
-    git clone https://github.com/bmhm/jameica-meta ${TARGETDIR}/jameica-meta
+    git clone --recursive https://github.com/bmhm/jameica-meta ${TARGETDIR}/jameica-meta
+
+    echo "cd to ${TARGETDIR}/jameica-meta"
     cd "${TARGETDIR}/jameica-meta"
-    git submodule init
-    git submodule update
-    mvn install
+
+    echo "mvn install -B"
+    mvn install -B
+
     cd ..
+
+    echo "rm -fr ${TARGETDIR}/jameica-meta"
     rm -fr "${TARGETDIR}/jameica-meta"
 }
 
