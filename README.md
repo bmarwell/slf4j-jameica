@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Build Status](https://travis-ci.org/bmhm/slf4j-jameica?branch=master)](https://travis-ci.org/bmhm/slf4j-jameica) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d12d4e627f154c06957ebf02b1999afd)](https://www.codacy.com/app/bmarwell/slf4j-jameica?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bmhm/slf4j-jameica&amp;utm_campaign=Badge_Grade)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Build Status](https://travis-ci.org/bmhm/slf4j-jameica.svg?branch=master)](https://travis-ci.org/bmhm/slf4j-jameica) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d12d4e627f154c06957ebf02b1999afd)](https://www.codacy.com/app/bmarwell/slf4j-jameica?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bmhm/slf4j-jameica&amp;utm_campaign=Badge_Grade)
 
 
 # slf4j-jameica
