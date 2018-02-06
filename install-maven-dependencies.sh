@@ -32,7 +32,7 @@ install_jameica() {
     cd "${TARGETDIR}/jameica-meta"
 
     echo "mvn install -B"
-    mvn install -B
+    mvn install -B -Dmaven.javadoc.skip=true
 
     cd ..
 
