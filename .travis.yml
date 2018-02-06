@@ -12,7 +12,7 @@ cache:
     - '$HOME/.m2'
 
 before_install:
-  - bash <(./install-maven-dependencies.sh)
+  - ./install-maven-dependencies.sh
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
