@@ -11,7 +11,7 @@ cache:
   directories:
     - '$HOME/.m2'
 
-before_install:
+before_script:
   - ./install-maven-dependencies.sh
 
 after_success:
