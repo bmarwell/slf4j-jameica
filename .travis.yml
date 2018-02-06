@@ -7,9 +7,6 @@ jdk:
   - openjdk8
   - oraclejdk9
 
-env:
-  - JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Xdoclint:none"
-
 cache:
   directories:
     - '$HOME/.m2'
